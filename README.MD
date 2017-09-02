@@ -77,6 +77,20 @@ export class MyTestAppModule {}
 5. Add picker component to your component:
 ```<owl-date-time [(ngModel)]="moment" ></owl-date-time>```
 
+6. Add fonts:
+```css
+@font-face {
+    font-family: 'fontello';
+    src: url('./assets/fonts/fontello.eot?81091010');
+    src: url('./assets/fonts/fontello.eot?81091010#iefix') format('embedded-opentype'),
+    url('./assets/fonts/fontello.woff2?81091010') format('woff2'),
+    url('./assets/fonts/fontello.woff?81091010') format('woff'),
+    url('./assets/fonts/fontello.ttf?81091010') format('truetype'),
+    url('./assets/fonts/fontello.svg?81091010#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+```
 ----------
 
 Properties
