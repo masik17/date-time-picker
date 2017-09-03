@@ -229,7 +229,7 @@ yarn install date-fns
 
 
 ### Demo
-Online demo is [here](https://ng-community.github.io/date-time-picker/)
+Online demo is [here](https://ng-community.github.io/#/date-time-picker)
 
 ### License
 * License: MIT
