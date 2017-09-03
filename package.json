@@ -1,6 +1,6 @@
 {
   "name": "@ng-community/date-time-picker",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Angular DateTimePicker",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
