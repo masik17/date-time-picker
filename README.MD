@@ -3,31 +3,46 @@
 **Angular date time picker - Angular reusable UI component**
 **This package supports Angular 4**
 
-----------
-Description
--------
+### Description
+---
+
 Simple Angular date time picker. Online demo is [here](https://ng-community.github.io/date-time-picker/). 
 This picker is responsive design, so feel free to try it in your desktops, tablets and mobile devices. 
 This picker uses  [date-fns](https://date-fns.org/).
 
-----------
-How to Use
--------
+### How to Use
+---
 
 1. Install with [npm](https://www.npmjs.com) or [yarn](https://yarnpkg.com):
+
 ```bash
 npm install @ng-community/date-time-picker --save
 ```
+
 or
+
 ```bash
 yarn add @ng-community/date-time-picker
 ```
 
-2. Add stylesheet in your index.html
-```html
-<link rel="stylesheet" type="text/css" href="/node_modules/@ng-community/date-time-picker/assets/style/picker.min.css" />
+2. Add fonts:
+
+```css
+@font-face {
+    font-family: 'fontello';
+    src: url('./assets/fonts/fontello.eot?81091010');
+    src: url('./assets/fonts/fontello.eot?81091010#iefix') format('embedded-opentype'),
+    url('./assets/fonts/fontello.woff2?81091010') format('woff2'),
+    url('./assets/fonts/fontello.woff?81091010') format('woff'),
+    url('./assets/fonts/fontello.ttf?81091010') format('truetype'),
+    url('./assets/fonts/fontello.svg?81091010#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 ```
+
 3. import __FormsModule__, __BrowserAnimationsModule__, __DateTimePickerModule__,  to your __@NgModule__ like example below
+
 ```js
 import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
@@ -76,25 +91,9 @@ export class MyTestAppModule {}
 ```
 5. Add picker component to your component:
 ```<owl-date-time [(ngModel)]="moment" ></owl-date-time>```
+---
 
-6. Add fonts:
-```css
-@font-face {
-    font-family: 'fontello';
-    src: url('./assets/fonts/fontello.eot?81091010');
-    src: url('./assets/fonts/fontello.eot?81091010#iefix') format('embedded-opentype'),
-    url('./assets/fonts/fontello.woff2?81091010') format('woff2'),
-    url('./assets/fonts/fontello.woff?81091010') format('woff'),
-    url('./assets/fonts/fontello.ttf?81091010') format('truetype'),
-    url('./assets/fonts/fontello.svg?81091010#fontello') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-```
-----------
-
-Properties
--------
+### Properties
 
 
 |Name|Type|Required|Default|Description|
@@ -175,11 +174,11 @@ Following options can be a part of the format.
  
 Your could learn more about this from [here](https://date-fns.org/v1.28.5/docs/format).
 
-----------
+### Localization
+---
 
-Localization
--------
 Localization for different languages and formats is defined by binding the locale settings object to the locale property. Following is the default values for English.
+
 ```
 <owl-date-time [(ngModel)]="dateValue" [locale]="en"></owl-date-time>
 ```
@@ -226,30 +225,33 @@ export class MyModel {
 }
 ```
 
-----------
+### Dependencies
+---
+- [date-fns](https://date-fns.org/)
 
-Dependencies
--------
-None.
+```bash
+npm install date-fns --save
+```
+
+or
+
+```bash
+yarn install date-fns
+```
 
 
-----------
-Theme
--------
+### Demo
+---
 
-The picker now separate its styles into **./node_modules/ng-pick-datetime/assets/style/picker.min.css**.
-You could inspect the picker's classes from your browser's dev tool and overwrite them in your project's css files.
-----------
-Demo
--------
 Online demo is [here](https://ng-community.github.io/date-time-picker/)
-----------
 
-License
--------
+
+### License
+---
+
 * License: MIT
 
-----------
-Author
--------
+
+### Author
+---
 **HieuNV**

@@ -13,6 +13,7 @@ yarn-error.log
 
 .editorconfig
 .travis.yml
+.npmignore
 gulpfile.js
 karma-test-entry.ts
 karma.conf.ts
@@ -21,7 +22,7 @@ tsconfig.json
 webpack-test.config.ts
 webpack-umd.config.ts
 yarn.lock
-
+tslint.json
 # Windows
 Thumbs.db
 Desktop.ini
