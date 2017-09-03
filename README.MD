@@ -4,14 +4,12 @@
 **This package supports Angular 4**
 
 ### Description
----
 
 Simple Angular date time picker. Online demo is [here](https://ng-community.github.io/date-time-picker/). 
 This picker is responsive design, so feel free to try it in your desktops, tablets and mobile devices. 
 This picker uses  [date-fns](https://date-fns.org/).
 
 ### How to Use
----
 
 1. Install with [npm](https://www.npmjs.com) or [yarn](https://yarnpkg.com):
 
@@ -91,10 +89,8 @@ export class MyTestAppModule {}
 ```
 5. Add picker component to your component:
 ```<owl-date-time [(ngModel)]="moment" ></owl-date-time>```
----
 
 ### Properties
-
 
 |Name|Type|Required|Default|Description|
 |:--- |:--- |:--- |:--- |:--- |
@@ -123,10 +119,7 @@ export class MyTestAppModule {}
 |`tabIndex`|number|Optional|`null`|Index of the element in tabbing order.|
 |`type`|string|Optional|`'both'`|Specify the type of the date-time picker, valid value are 'both', 'calendar' and 'timer'.|
 
-----------
-
-Events
--------
+### Events
 
 |Events|Parameter|Description|
 |:--- |:--- |:--- |
@@ -134,12 +127,10 @@ Events
 |`onFocus`|event: Focus event|Callback to invoke on focus of input field.|
 |`onInvalid`|originalEvent: event, value: invalid date-time value|Callback to invoke when a invalid date-time value is selected.|
 
-----------
 
-Styling
--------
+### Styling
+
 Following is the list of structural style classes.
-
 
 |Name|Element|
 |:--- |:--- |
@@ -147,10 +138,8 @@ Following is the list of structural style classes.
 |`owl-dateTime-input`|Input element|
 |`owl-dateTime-dialog`|Wrapper of the dropdown dialog|
 
-----------
+### DateFormat
 
-DateFormat
--------
 Default date format is 'YYYY/MM/DD HH:mm', to customize this use dateFormat property.
 Following options can be a part of the format.
 
@@ -175,7 +164,6 @@ Following options can be a part of the format.
 Your could learn more about this from [here](https://date-fns.org/v1.28.5/docs/format).
 
 ### Localization
----
 
 Localization for different languages and formats is defined by binding the locale settings object to the locale property. Following is the default values for English.
 
@@ -226,7 +214,7 @@ export class MyModel {
 ```
 
 ### Dependencies
----
+
 - [date-fns](https://date-fns.org/)
 
 ```bash
@@ -241,17 +229,10 @@ yarn install date-fns
 
 
 ### Demo
----
-
 Online demo is [here](https://ng-community.github.io/date-time-picker/)
 
-
 ### License
----
-
 * License: MIT
 
-
 ### Author
----
 **HieuNV**
